@@ -14,14 +14,32 @@ h1 {
     font-size: 45px;
     color: #444;
 }
+h2 {
+    color: #444;
+    font-size: 55px;
+}
+h4 {
+    font-size: 24px;
+    color: #444;
+}
+p {
+    line-height: 20px;
+    color: #777;
+}
+a {
+    text-decoration: none;
+}
 .wrapper {
     margin: 0 auto;
-    /* width: 940px; */
-    /* padding: 0 10px; */
 }
 .orange {
     color: #ff7a00;
 }
+small {
+    font-size: 13px;
+    font-style: italic;
+}
+
 
 /*   HEADER   */
 
@@ -35,10 +53,10 @@ header div:nth-child(1) {
     align-items: center;
 }
 header nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
     color: #444;
     margin-right: 20px;
+    text-transform: uppercase;
+    font-size: large;
 }
 nav ul:nth-child(1) {
     display: flex;
@@ -48,3 +66,124 @@ ul {
     font-weight: bold;
 }
 
+
+/* MAIN IMAGE */
+
+#main-image {
+    height: 580px;
+    background-image: url('img/main.jpg');
+    background-size: cover;
+}
+#main-image h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 150px 0 40px 0;
+    margin-bottom: 20px;
+}
+.button-1 {
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: #ff7a00;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+.button-1:hover {
+    background: #02b8dd;
+}
+
+
+/*  STEPS   */
+
+#steps {
+}
+#steps ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 10px;
+}
+#steps li {
+    padding-top: 140px;
+    text-align: center;
+    margin-right: 10px;
+}
+#steps h4 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#steps p {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: smaller;
+}
+#steps-1 {
+    background: url(img/steps-icon-1.png) no-repeat top center;
+}
+#steps-2 {
+    background: url(img/steps-icon-2.png) no-repeat top center;
+}
+#steps-3 {
+    background: url(img/steps-icon-3.png) no-repeat top center;
+}
+
+
+/*  POSSIBILITIES   */
+
+#possibilities {
+    padding: 60px 0;
+    background-color: #efefef;
+}
+#possibilities p {
+    text-align: center ;
+}
+#possibilities article {
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 20px;
+}
+#possibilities .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+#possibilities .wrapper article:first-child {
+    background-image: url(img/article-image-1.jpg);
+}
+#possibilities .wrapper article:nth-child(2) {
+    background-image: url(img/article-image-2.jpg);
+}
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(255,255,255,0.95);
+    height: 100%;
+    width: 190px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    box-sizing: border-box;
+}
+article h4 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    text-align: center;
+}
+.button-2 {
+    color: #fff;
+    background-color: #ff7a00;
+    margin-top: 15px;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+.button-2:hover {
+    color: #fff;
+    background-color: #02b8dd;
+}
