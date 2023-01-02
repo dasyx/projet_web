@@ -252,3 +252,80 @@ footer h1 {
     padding-top: 30px;
     color: #777;
 }
+
+
+/* MEDIA QUERIES */
+
+/* Largeur minimale de l'écran de 600 pixels */
+@media only screen and (min-width: 600px) {
+    /* Les règles CSS spécifiées ici s'appliqueront aux écrans de 600 pixels de large ou plus */
+    header h1 {
+      font-size: 36px;
+    }
+    nav ul {
+      display: flex;
+    }
+    nav li {
+      margin-right: 20px;
+    }
+    #main-image h2 {
+      font-size: 48px;
+    }
+    #steps li {
+      width: 33%;
+    }
+    #possibilities article {
+      width: 50%;
+    }
+    #contact form label {
+      display: block;
+      margin-bottom: 8px;
+    }
+  }
+  
+  /* Largeur minimale de l'écran de 1000 pixels */
+  @media only screen and (min-width: 1000px) {
+    /* Les règles CSS spécifiées ici s'appliqueront aux écrans de 1000 pixels de large ou plus */
+    header h1 {
+      font-size: 48px;
+    }
+    nav ul {
+      justify-content: flex-end;
+    }
+    #main-image h2 {
+      font-size: 72px;
+    }
+    #steps li {
+      width: 25%;
+    }
+    #possibilities article {
+      width: 33%;
+    }
+  }
+  
+  /* Largeur maximale de l'écran de 600 pixels */
+  @media only screen and (max-width: 600px) {
+    /* Les règles CSS spécifiées ici s'appliqueront aux écrans de 600 pixels de large ou moins */
+    header h1 {
+      font-size: 24px;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav li {
+      margin: 10px 0;
+    }
+    #main-image h2 {
+      font-size: 32px;
+    }
+    #steps li {
+      width: 100%;
+    }
+    #possibilities article {
+      width: 100%;
+    }
+    #contact form label {
+      margin-bottom: 4px;
+    }
+  }
+  
